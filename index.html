@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДЗ№17</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <section>
+        <h2>Пример№1</h2>
+        <div class="input">
+            <label for="userPhone" class="first_label">
+                Номер телефона
+            </label>
+            <input id="userPhone" type="tel" name="userPhone" placeholder="Введите номер телефона">
+        </div>
+        <div class="btn">
+            <button onclick="checkNumber()">Проверить номер</button>
+        </div>
+        <div class="answer">
+            <div class="title">Результат</div>
+            <div id="box"></div>
+        </div>
+    </section>
+    <section>
+        <h2>Пример№2</h2>
+        <div class="input">
+            <label for="userPhoneNumber" class="first_label">
+                Номер телефона
+            </label>
+            <input id="userPhoneNumber" type="tel" name="userPhone" placeholder="Введите номер телефона" oninput="formatNumber()">
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
